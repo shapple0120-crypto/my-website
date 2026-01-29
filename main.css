@@ -1,0 +1,102 @@
+/* 기본 스타일 */
+body {
+  background: #f5f6f7;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #222;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 12px 0;
+}
+
+.menu a {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+/* 메인 컨텐츠 */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* 카드 스타일 */
+.day-card, .tip-card, .intro-card, .highlight {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.day-card ul, .tip-card ul, .highlight ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.day-card li, .tip-card li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* 이미지 */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu a {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 22px;
+  }
+}
