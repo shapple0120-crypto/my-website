@@ -82,6 +82,31 @@ img {
   border-radius: 8px;
   margin: 10px 0;
 }
+.food-card {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.food-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.food-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  display: block;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+  .food-title {
+    font-size: 1.25rem;
+  }
+}
 
 /* 모바일 대응 */
 @media (max-width: 600px) {
@@ -100,3 +125,4 @@ img {
     font-size: 22px;
   }
 }
+
